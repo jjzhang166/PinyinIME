@@ -1,0 +1,339 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- modify by guojian @20161121 for bug 5280 -->
+<keyboard
+    balloon="true"
+    height="20%p"
+    key_type="0"
+    qwerty="true"
+    qwerty_uppercase="true"
+    repeat="false"
+    skb_cache_flag="true"
+    skb_template="@xml/skb_template1"
+    width="10%p" >
+
+    <row
+        start_pos_x="0%p"
+        start_pos_y="0%p"
+        width="25%p" >
+        <key id="6" />
+        <!-- <key id="4" /> -->
+        <key
+            code="-3"
+            height="20%p"
+            key_type="1"
+            label="数字" />
+        <key
+            code="-6"
+            height="20%p"
+            icon="@drawable/smiley_icon"
+            icon_popup="@drawable/smiley_popup_icon"
+            key_type="1" />
+        <key
+            code="4"
+            height="20%p"
+            icon="@drawable/tutorial_back"
+            key_type="1" />
+    </row>
+    <row start_pos_x="0%p" 
+         start_pos_y="20%p">
+        <keys
+            codes="45|51|33|46|48|53|49|37|43|44"
+            labels="Q|W|E|R|T|Y|U|I|O|P"
+            splitter="|" />
+    </row>
+    <row start_pos_x="5%p" 
+         start_pos_y="40%p">
+        <keys
+            codes="29|47|32|34|35|36|38|39|40"
+            labels="A|S|D|F|G|H|J|K|L"
+            splitter="|" />
+    </row>
+    <row start_pos_x="0%p"
+         start_pos_y="60%p" >
+        <key
+            icon="@drawable/comma_full_icon"
+            icon_popup="@drawable/comma_full_popup_icon"
+            label="，"
+            width="15%p" >
+           <!--  <toggle_state
+                code="-6"
+                icon="@drawable/smiley_icon"
+                icon_popup="@drawable/smiley_popup_icon"
+                key_type="2"
+                state_id="@string/toggle_smiley" /> -->
+            <toggle_state
+                code="-1"
+                icon="@drawable/shift_off_icon"
+                icon_popup="@drawable/shift_off_popup_icon"
+                key_type="2"
+                state_id="@string/toggle_en_lower" />
+            <toggle_state
+                code="-1"
+                icon="@drawable/shift_on_icon"
+                icon_popup="@drawable/shift_on_popup_icon"
+                key_type="3"
+                state_id="@string/toggle_en_upper" />
+            <toggle_state
+                key_type="1"
+                label="&apos;"
+                state_id="@string/toggle_cn_cand" />
+        </key>
+
+        <keys
+            codes="54|52|31|50|30|42|41"
+            labels="Z|X|C|V|B|N|M"
+            splitter="|" />
+        <!--
+        <key id="6" />
+        <key id="4" />
+        -->
+        <key id="3" /> <!-- delete key -->
+    </row>
+    <row
+        row_id="@string/toggle_row_cn"
+        start_pos_x="0%p" 
+        start_pos_y="80%p">
+        <key
+            code="-5"
+            height="20%p"
+            key_type="1"
+            width="20%p"
+            label="符号" />
+        <key
+            icon="@drawable/period_full_icon"
+            icon_popup="@drawable/period_full_popup_icon"
+            label="。"
+            start_pos_x="20%p"
+            width="10%p" />
+        <key
+            code="62"
+            key_type="5"
+            start_pos_x="30%p"
+            width="40%p" />
+       <!--  <key id="1" /> -->
+        <key id="7" />
+        <key
+        code="66"
+        height="20%p"
+        key_type="1"
+        start_pos_x="80%p"
+        icon="@drawable/enter_icon"
+        width="20%p" >
+        <toggle_state
+            code="66"
+            label="去往"
+            state_id="@string/toggle_enter_go" />
+        <toggle_state
+            code="66"
+            label="发送"
+            state_id="@string/toggle_enter_send" />
+        <toggle_state
+            code="66"
+            label="下一个"
+            state_id="@string/toggle_enter_next" />
+        <toggle_state
+            code="66"
+            label="完成"
+            state_id="@string/toggle_enter_done" />
+    </key>
+        
+    </row>
+    <row
+        row_id="@string/toggle_row_uri"
+        start_pos_x="0%p" 
+        start_pos_y="80%p">
+        <key
+            code="-5"
+            height="20%p"
+            key_type="1"
+            width="20%p"
+            label="符号" />
+        <key
+            icon="@drawable/period_full_icon"
+            icon_popup="@drawable/period_full_popup_icon"
+            label="。"
+            start_pos_x="20%p"
+            width="10%p" />
+        <key
+            code="62"
+            key_type="5"
+            start_pos_x="30%p"
+            width="40%p" />
+       <!--  <key id="1" /> -->
+        <key id="7" />
+        <key
+        code="66"
+        height="20%p"
+        key_type="1"
+        start_pos_x="80%p"
+        icon="@drawable/enter_icon"
+        width="20%p" >
+        <toggle_state
+            code="66"
+            label="去往"
+            state_id="@string/toggle_enter_go" />
+        <toggle_state
+            code="66"
+            label="发送"
+            state_id="@string/toggle_enter_send" />
+        <toggle_state
+            code="66"
+            label="下一个"
+            state_id="@string/toggle_enter_next" />
+        <toggle_state
+            code="66"
+            label="完成"
+            state_id="@string/toggle_enter_done" />
+    </key>
+        
+    </row>
+    <row
+        row_id="@string/toggle_row_emailaddress"
+        start_pos_x="0%p" 
+        start_pos_y="80%p">
+        <key
+            code="-5"
+            height="20%p"
+            key_type="1"
+            width="20%p"
+            label="符号" />
+        <key
+            icon="@drawable/period_full_icon"
+            icon_popup="@drawable/period_full_popup_icon"
+            label="。"
+            start_pos_x="20%p"
+            width="10%p" />
+        <key
+            code="62"
+            key_type="5"
+            start_pos_x="30%p"
+            width="40%p" />
+       <!--  <key id="1" /> -->
+        <key id="7" />
+        <key
+        code="66"
+        height="20%p"
+        key_type="1"
+        start_pos_x="80%p"
+        icon="@drawable/enter_icon"
+        width="20%p" >
+        <toggle_state
+            code="66"
+            label="去往"
+            state_id="@string/toggle_enter_go" />
+        <toggle_state
+            code="66"
+            label="发送"
+            state_id="@string/toggle_enter_send" />
+        <toggle_state
+            code="66"
+            label="下一个"
+            state_id="@string/toggle_enter_next" />
+        <toggle_state
+            code="66"
+            label="完成"
+            state_id="@string/toggle_enter_done" />
+    </key>
+        
+    </row>
+    <row
+        row_id="@string/toggle_row_en"
+        start_pos_x="0%p" 
+        start_pos_y="80%p">
+        <key
+            code="-5"
+            height="20%p"
+            key_type="1"
+            width="20%p"
+            label="符号" />
+        <key
+            icon="@drawable/period_full_icon"
+            icon_popup="@drawable/period_full_popup_icon"
+            label="。"
+            start_pos_x="20%p"
+            width="10%p" />
+        <key
+            code="62"
+            key_type="5"
+            start_pos_x="30%p"
+            width="40%p" />
+       <!--  <key id="1" /> -->
+        <key id="7" />
+        <key
+        code="66"
+        height="20%p"
+        key_type="1"
+        start_pos_x="80%p"
+        icon="@drawable/enter_icon"
+        width="20%p" >
+        <toggle_state
+            code="66"
+            label="去往"
+            state_id="@string/toggle_enter_go" />
+        <toggle_state
+            code="66"
+            label="发送"
+            state_id="@string/toggle_enter_send" />
+        <toggle_state
+            code="66"
+            label="下一个"
+            state_id="@string/toggle_enter_next" />
+        <toggle_state
+            code="66"
+            label="完成"
+            state_id="@string/toggle_enter_done" />
+    </key>
+        
+    </row>
+   <!--  <row
+        row_id="@string/toggle_row_cn"
+        start_pos_x="00%p" >
+        <key
+            icon="@drawable/period_full_icon"
+            icon_popup="@drawable/period_full_popup_icon"
+            label="。"
+            start_pos_x="20%p"
+            width="10%p" />
+        <key
+            code="62"
+            key_type="5"
+            start_pos_x="30%p"
+            start_pos_y="80%p"
+            width="40%p" />
+        <key id="2" />
+        <key id="7" />
+    </row>
+    <row
+        row_id="@string/toggle_row_uri"
+        start_pos_x="00%p" >
+        <key
+            label="/"
+            start_pos_x="20%p"
+            width="10%p" />
+        <key
+            code="62"
+            key_type="5"
+            start_pos_x="30%p"
+            start_pos_y="80%p"
+            width="40%p" />
+        <key id="1" />
+        <key id="7" />
+    </row>
+    <row
+        row_id="@string/toggle_row_emailaddress"
+        start_pos_x="00%p" >
+        <key
+            label="\@"
+            start_pos_x="20%p"
+            width="10%p" />
+        <key
+            code="62"
+            key_type="5"
+            start_pos_x="30%p"
+            start_pos_y="80%p"
+            width="40%p" />
+        <key id="1" />
+        <key id="7" />
+    </row> -->
+
+</keyboard>

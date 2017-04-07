@@ -1,0 +1,233 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+     Copyright (C) 2009 The Android Open Source Project
+
+     Licensed under the Apache License, Version 2.0 (the "License");
+     you may not use this file except in compliance with the License.
+     You may obtain a copy of the License at
+
+          http://www.apache.org/licenses/LICENSE-2.0
+
+     Unless required by applicable law or agreed to in writing, software
+     distributed under the License is distributed on an "AS IS" BASIS,
+     WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+     See the License for the specific language governing permissions and
+     limitations under the License.
+-->
+<keyboard
+    balloon="true"
+    height="25%p"
+    key_type="0"
+    qwerty="true"
+    repeat="false"
+    skb_cache_flag="true"
+    skb_sticky_flag="false"
+    skb_template="@xml/skb_template1"
+    width="10%p" >
+
+    <row
+        start_pos_x="0%p"
+        start_pos_y="0%p"
+        width="25%p" >
+        <key
+            code="-2"
+            key_type="1"
+            label="中 文"
+            repeat="true"
+            start_pos_x="0%p"
+            start_pos_y="0%p" >
+            <toggle_state
+                code="-2"
+                label="英 文"
+                state_id="@string/toggle_en_lower" />
+            <toggle_state
+                code="-2"
+                label="英 文"
+                state_id="@string/toggle_en_upper" />
+        </key>
+        <key
+            code="-3"
+            key_type="1"
+            label="数字" />
+        <key
+            code="-6"
+            icon="@drawable/smiley_icon"
+            icon_popup="@drawable/smiley_popup_icon"
+            key_type="1" />
+        <key
+            code="4"
+            icon="@drawable/tutorial_back"
+            key_type="1" />
+    </row>
+    <row start_pos_x="0%p" >
+        <key
+            icon="@drawable/emotion_icon_00"
+            icon_popup="@drawable/emotion_icon_00_popup"
+            label=":)" />
+        <key
+            icon="@drawable/emotion_icon_01"
+            icon_popup="@drawable/emotion_icon_01_popup"
+            label=";)" />
+        <key
+            icon="@drawable/emotion_icon_02"
+            icon_popup="@drawable/emotion_icon_02_popup"
+            label=":P" />
+        <key
+            icon="@drawable/emotion_icon_03"
+            icon_popup="@drawable/emotion_icon_03_popup"
+            label=":D" />
+        <key
+            icon="@drawable/emotion_icon_04"
+            icon_popup="@drawable/emotion_icon_04_popup"
+            label="^_^" />
+        <key
+            icon="@drawable/emotion_icon_05"
+            icon_popup="@drawable/emotion_icon_05_popup"
+            label="^O^" />
+        <key
+            icon="@drawable/emotion_icon_14"
+            icon_popup="@drawable/emotion_icon_14_popup"
+            label="-_-" />
+        <key
+            icon="@drawable/emotion_icon_15"
+            icon_popup="@drawable/emotion_icon_15_popup"
+            label="-_-z" />
+        <key
+            icon="@drawable/emotion_icon_16"
+            icon_popup="@drawable/emotion_icon_16_popup"
+            label="-_-||" />
+        <key
+            icon="@drawable/emotion_icon_06"
+            icon_popup="@drawable/emotion_icon_06_popup"
+            label=":-*" />
+    </row>
+    <row start_pos_x="0%p" >
+        <key
+            icon="@drawable/comma_full_icon"
+            icon_popup="@drawable/comma_full_popup_icon"
+            label="，" >
+            <toggle_state
+                code="-1"
+                icon="@drawable/shift_off_icon"
+                icon_popup="@drawable/shift_off_popup_icon"
+                key_type="2"
+                state_id="@string/toggle_en_lower" />
+            <toggle_state
+                code="-1"
+                icon="@drawable/shift_on_icon"
+                icon_popup="@drawable/shift_on_popup_icon"
+                key_type="3"
+                state_id="@string/toggle_en_upper" />
+            <toggle_state
+                key_type="1"
+                label="&apos;"
+                state_id="@string/toggle_cn_cand" />
+        </key>
+        <key
+            icon="@drawable/emotion_icon_10"
+            icon_popup="@drawable/emotion_icon_10_popup"
+            label=":(" />
+        <key
+            icon="@drawable/emotion_icon_11"
+            icon_popup="@drawable/emotion_icon_11_popup"
+            label=":&apos;(" />
+        <key
+            icon="@drawable/emotion_icon_22"
+            icon_popup="@drawable/emotion_icon_22_popup"
+            label=">_&lt;" />
+        <key
+            icon="@drawable/emotion_icon_23"
+            icon_popup="@drawable/emotion_icon_23_popup"
+            label="T_T" />
+        <key
+            icon="@drawable/emotion_icon_24"
+            icon_popup="@drawable/emotion_icon_24_popup"
+            label="囧" />
+        <key
+            icon="@drawable/emotion_icon_12"
+            icon_popup="@drawable/emotion_icon_12_popup"
+            label=":S" />
+        <key
+            icon="@drawable/emotion_icon_20"
+            icon_popup="@drawable/emotion_icon_20_popup"
+            label="¬_¬" />
+        <key
+            icon="@drawable/emotion_icon_21"
+            icon_popup="@drawable/emotion_icon_21_popup"
+            label="\@_\@" />
+        <key
+            code="67"
+            icon="@drawable/delete_icon"
+            icon_popup="@drawable/delete_popup_icon"
+            key_type="1"
+            repeat="true" />
+    </row>
+    <row start_pos_x="0%p" >
+        <key
+            code="-5"
+            key_type="1"
+            label="符号"
+            width="20%p" />
+        <key
+            icon="@drawable/period_full_icon"
+            icon_popup="@drawable/period_full_popup_icon"
+            label="。"
+            start_pos_x="20%p"
+            width="10%p" />
+        <key
+            code="62"
+            key_type="5"
+            start_pos_x="30%p"
+            width="40%p" />
+        <key
+            code="56"
+            icon="@drawable/period_icon"
+            icon_popup="@drawable/period_popup_icon"
+            key_type="0"
+            label="."
+            width="10%p" />
+        <key
+            code="66"
+            icon="@drawable/enter_icon"
+            key_type="1"
+            start_pos_x="80%p"
+            width="20%p" >
+            <toggle_state
+                code="66"
+                label="去往"
+                state_id="@string/toggle_enter_go" />
+            <toggle_state
+                code="66"
+                label="发送"
+                state_id="@string/toggle_enter_send" />
+            <toggle_state
+                code="66"
+                label="下一个"
+                state_id="@string/toggle_enter_next" />
+            <toggle_state
+                code="66"
+                label="完成"
+                state_id="@string/toggle_enter_done" />
+        </key>
+    </row>
+
+    <!--
+  <row start_pos_x="31%p">
+    <key code="-6" key_type="3" icon="@drawable/smiley_icon"
+      icon_popup="@drawable/smiley_popup_icon" width="9%p"/>
+    <key label=":O" icon="@drawable/emotion_icon_13"
+      icon_popup="@drawable/emotion_icon_13_popup"/>
+    <key id="6"/>
+    <key code="-3" key_type="2" label="\?123" />
+    <key id="3"/>
+  </row>
+
+  <row width="9%p" key_type="1" start_pos_y="75%p" start_pos_x="36%p">
+      <key label="。" icon="@drawable/period_full_icon"
+      icon_popup="@drawable/period_full_popup_icon" width="9%p"/>
+    <key code="62" key_type="5" width="10%p"/>
+    <key id="1"/>
+  </row>
+    -->
+
+</keyboard>

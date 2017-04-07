@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+     Copyright (C) 2009 The Android Open Source Project
+
+     Licensed under the Apache License, Version 2.0 (the "License");
+     you may not use this file except in compliance with the License.
+     You may obtain a copy of the License at
+
+          http://www.apache.org/licenses/LICENSE-2.0
+
+     Unless required by applicable law or agreed to in writing, software
+     distributed under the License is distributed on an "AS IS" BASIS,
+     WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+     See the License for the specific language governing permissions and
+     limitations under the License.
+-->
+<keyboard
+    balloon="true"
+    height="20%p"
+    key_type="0"
+    repeat="false"
+    skb_cache_flag="true"
+    skb_template="@xml/skb_template1"
+    width="25%p" >
+
+    <row
+        start_pos_x="0%p"
+        start_pos_y="0%p"
+        width="25%p" >
+        <key id="6" />
+        <!-- <key id="4" /> -->
+        <key
+            code="-3"
+            height="20%p"
+            key_type="1"
+            label="数字" />
+        <key
+            code="-6"
+            height="20%p"
+            icon="@drawable/smiley_icon"
+            icon_popup="@drawable/smiley_popup_icon"
+            key_type="1" />
+        <key
+            code="4"
+            height="20%p"
+            icon="@drawable/tutorial_back"
+            key_type="1" />
+    </row>
+    <row start_pos_x="0%p" >
+        <keys
+            codes="8|9|10"
+            labels="1|2|3"
+            splitter="|" />
+
+        <key
+            code="67"
+            height="40%p"
+            icon="@drawable/delete_icon"
+            key_type="1"
+            repeat="true"
+            start_pos_y="20%p"
+            width="25%p" />
+    </row>
+    <row start_pos_x="0%p" >
+        <keys
+            codes="11|12|13"
+            labels="4|5|6"
+            splitter="|" />
+    </row>
+    <row start_pos_x="0%p" >
+        <keys
+            codes="14|15|16"
+            labels="7|8|9"
+            splitter="|" />
+
+        <key
+            balloon="false"
+            code="66"
+            height="40%p"
+            key_type="1"
+            label="下一个"
+            width="25%p" />
+    </row>
+    <row start_pos_x="0%p" >
+        <key
+            code="56"
+            icon="@drawable/period_icon"
+            key_type="0"
+            label="。"
+            width="25%p" />
+        <key
+            code="7"
+            label="0"
+            width="50%p" />
+    </row>
+
+    <!--
+  <row start_pos_x="9%p">
+    <keys splitter="|" labels="\@|#"/>
+    <key label="、" icon="@drawable/dun_icon"
+      icon_popup="@drawable/dun_popup_icon">
+      <toggle_state state_id="@string/toggle_en_sym1" label="/"/>
+    </key>
+    <keys splitter="|" labels="(|)"/>
+    <key label="—">
+      <toggle_state state_id="@string/toggle_en_sym1" label="-"/>
+    </key>
+    <key label="“">
+      <toggle_state state_id="@string/toggle_en_sym1" label="&quot;"/>
+    </key>
+    <key label="”">
+      <toggle_state state_id="@string/toggle_en_sym1" label="'"/>
+    </key>
+    <key label="：">
+      <toggle_state state_id="@string/toggle_en_sym1" label=":"/>
+    </key>
+    <key label="；">
+      <toggle_state state_id="@string/toggle_en_sym1" label=";"/>
+    </key>
+    <key label="，">
+      <toggle_state state_id="@string/toggle_en_sym1" label=","/>
+    </key>
+    <key label="？">
+      <toggle_state state_id="@string/toggle_en_sym1" label="\?"/>
+    </key>
+  </row>
+    -->
+    <!--
+  <row start_pos_x="26%p">
+    <key code="-5" width="9%p" key_type="2" label="ALT"/>
+    <key label="！">
+      <toggle_state state_id="@string/toggle_en_sym1" label="!"/>
+    </key>
+    <key label="￥">
+      <toggle_state state_id="@string/toggle_en_sym1" label="$"/>
+    </key>
+    <key key_type="1" code="-2" label="中 符" width="9%p" repeat="true">
+      <toggle_state state_id="@string/toggle_en_sym1" label="英 符" code="-2"/>
+    </key>
+    <key code="-3" key_type="3" label="\?123" width="9%p"/>
+    <key id="3"/>
+  </row>
+    -->
+    <!--
+  <row width="9%p" key_type="1" start_pos_y="75%p" start_pos_x="36%p">
+    <key label="。" key_type="0" icon="@drawable/period_full_icon"
+      icon_popup="@drawable/period_full_popup_icon" >
+      <toggle_state state_id="@string/toggle_en_sym1" label="."
+        icon="@drawable/period_icon" icon_popup="@drawable/period_popup_icon"/>
+      <toggle_state state_id="@string/toggle_en_upper" label="."
+        icon="@drawable/period_icon" icon_popup="@drawable/period_popup_icon"/>
+    </key>
+    <key code="62" key_type="5" width="10%p"/>
+    <key id="1"/>
+  </row>
+    -->
+
+</keyboard>
